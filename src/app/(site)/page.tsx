@@ -387,7 +387,7 @@ const HomePage = () => {
                     {card.description}
                   </p>
                   <Button
-                    variant="outline"
+                    variant="btn-primary"
                     className="whitespace-nowrap w-full mt-4 bg-primary/80 border border-yellow-400/50 hover:border-yellow-400 hover:bg-gradient-to-r from-primary/80 to-yellow-300"
                   >
                     {card.planType === PRICING_PLANS.proplan

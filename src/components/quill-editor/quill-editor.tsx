@@ -42,7 +42,6 @@ import BannerUpload from '../banner-upload/banner-upload';
 import { XCircleIcon } from 'lucide-react';
 import { useSocket } from '@/lib/providers/socket-provider';
 import { useSupabaseUser } from '@/lib/providers/supabase-user-provider';
-import GenerateAITemplate from '../global/GenerateAITemplate';
 
 interface QuillEditorProps {
   dirDetails: File | Folder | workspace;
@@ -512,17 +511,6 @@ const QuillEditor: React.FC<QuillEditorProps> = ({
     };
   }, [fileId, quill, supabase, user]);
 
-  const [generatedContent, setGeneratedContent] = useState<any>('');
-
-const handleGenerateAIOutput = (output: any) => {
-  setGeneratedContent(output);
-  // Insert the generated content into the Quill editor
-  if (quill) {
-    const range = quill.getSelection(true);
-    quill.insertText(range.index, output);
-  }
-};
-
   return (
     <>
       <div className="relative">
@@ -593,7 +581,6 @@ const handleGenerateAIOutput = (output: any) => {
         >
           <div>{breadCrumbs}</div>
           <div className="flex items-center gap-4">
-          <GenerateAITemplate setGenerateAIOutput={(output: any) => handleGenerateAIOutput(output)} />
             <div className="flex items-center justify-center h-10">
               {collaborators?.map((collaborator) => (
                 <TooltipProvider key={collaborator.id}>

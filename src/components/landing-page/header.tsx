@@ -235,7 +235,7 @@ const Header = () => {
       >
         <Link href={'/login'}>
           <Button
-            variant="link"
+            variant="btn-secondary"
             className=" p-1 sm:block"
           >
             Login
@@ -243,7 +243,7 @@ const Header = () => {
         </Link>
         <Link href="/signup">
           <Button
-            variant="default"
+            variant="btn-primary"
             className="whitespace-nowrap"
           >
             Sign Up
