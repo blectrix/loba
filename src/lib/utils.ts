@@ -18,7 +18,7 @@ export const formatPrice = (price: Price) => {
 export const getURL = () => {
   let url =
     process?.env?.NEXT_PUBLIC_SITE_URL ??
-    'https://lobanotes.vercel.app/';
+    'https://loba.up.railway.app/';
 
   url = url.includes('http') ? url : `https://${url}`;
   url = url.charAt(url.length - 1) === '/' ? url : `${url}/`;
