@@ -570,14 +570,15 @@ const QuillEditor: React.FC<QuillEditorProps> = ({
           </article>
         )}
         <div
-          className="flex 
-        flex-col-reverse 
-        sm:flex-row 
-        sm:justify-between 
-        justify-center 
-        sm:items-center 
-        sm:p-2 
-        p-8"
+          className="flex
+            flex-col-reverse 
+            sm:flex-row 
+            sm:justify-between 
+            justify-center 
+            sm:items-center 
+            sm:p-2 
+            p-8
+      "
         >
           <div>{breadCrumbs}</div>
           <div className="flex items-center gap-4">

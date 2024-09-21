@@ -180,7 +180,7 @@ const Header = () => {
                   Unlock full power with collaboration.
                 </ListItem>
                 <ListItem
-                  title={'free Plan'}
+                  title={'Free Plan'}
                   href={'#'}
                 >
                   Great for teams just starting out.

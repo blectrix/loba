@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children, params }) => {
         border-l-[1px]
         w-full
         relative
-        overflow-hidden
+        overflow-auto
         shadow-lg shadow-foreground/20 rounded-lg
       "
       >
