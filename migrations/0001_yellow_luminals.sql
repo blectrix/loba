@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS "files" (
 	"icon_id" text NOT NULL,
 	"data" text,
 	"in_trash" text,
+	"logo" text,
 	"banner_url" text,
 	"workspace_id" uuid NOT NULL,
 	"folder_id" uuid NOT NULL
@@ -17,6 +18,7 @@ CREATE TABLE IF NOT EXISTS "folders" (
 	"icon_id" text NOT NULL,
 	"data" text,
 	"in_trash" text,
+	"logo" text,
 	"banner_url" text,
 	"workspace_id" uuid NOT NULL
 );

@@ -8,6 +8,7 @@ const ModeToggle = () => {
   const { setTheme, theme } = useTheme();
   return (
     <Button
+      className='bg-transparent hover:bg-accent border hover:border-primary dark:border-[#455346] dark:hover:bg-accent dark:hover:border-muted-foreground whitespace-nowrap'
       variant={'outline'}
       size="icon"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

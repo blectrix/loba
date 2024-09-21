@@ -70,21 +70,21 @@ const HomePage = () => {
               </Button>
             </Link>
         </div>
-        {/* <Button
+        <Button
             
-            className="cursor-default hover:bg-background bg-background shadow-none text-background dark:bg-background dark:shadow-none dark:text-background
+            className="cursor-default mb-4 hover:bg-background bg-background shadow-none text-background dark:bg-background dark:shadow-none dark:text-background
           "
           >
-            Get Started Free
-          </Button> */}
+            Get Loba Free
+          </Button>
         <div
           className="md:mt-[-90px] 
           sm:w-fit
-          w-[560px]
+          w-[460px]
           flex
           justify-center
           items-center
-          mt-[-40px]
+          mt-[-90px]
           relative
           sm:ml-0
           
@@ -158,7 +158,7 @@ const HomePage = () => {
                 <div
                   key={client.alt}
                   className=" relative
-                    w-[20px]
+                    w-[80px] md:w-[40px]
                     m-20
                     shrink-0
                     flex
@@ -169,7 +169,7 @@ const HomePage = () => {
                     src={client.logo}
                     alt={client.alt}
                     width={200}
-                    className="object-contain max-w-none"
+                    className="hover:grayscale object-contain max-w-none"
                   />
                 </div>
                 
@@ -264,7 +264,7 @@ const HomePage = () => {
                   'animate-[slide_250s_linear_infinite_reverse]': index === 1,
                   'ml-[100vw]': index === 1,
                 }),
-                // 'hover:pause' 
+                'hover:paused' 
               )}
             >
               {USERS.map((testimonial, index) => (
@@ -387,7 +387,7 @@ const HomePage = () => {
                     {card.description}
                   </p>
                   <Button
-                    variant="btn-primary"
+                    variant="outline"
                     className="whitespace-nowrap w-full mt-4 bg-primary/80 border border-yellow-400/50 hover:border-yellow-400 hover:bg-gradient-to-r from-primary/80 to-yellow-300"
                   >
                     {card.planType === PRICING_PLANS.proplan
@@ -443,7 +443,7 @@ const HomePage = () => {
               animate={{ translateX: "0" }}
               transition={{
                 repeat: Infinity,
-                duration: 30,
+                duration: 40,
                 ease: "linear",
               }}
             className='flex flex-none gap-14 pr-14 -translate-x-1/2'>

@@ -11,7 +11,7 @@ export function ThemeModeToggle() {
 
     return (
         <Button
-        className="bg-background hover:bg-accent"
+        className="bg-background hover:bg-accent border hover:border-primary dark:border-[#455346] dark:hover:bg-accent dark:hover:border-muted-foreground whitespace-nowrap"
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
